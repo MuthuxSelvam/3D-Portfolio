@@ -3,7 +3,6 @@ import type {
   TService,
   TTechnology,
   TExperience,
-  TTestimonial,
   TProject,
 } from "../types";
 
@@ -24,13 +23,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  volunteer,
+  dexian,
+  community,
+  aidetection,
+  oncology,
+  diabetes,
   threejs,
 } from "../assets";
 
@@ -51,19 +49,19 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "AI Intern",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Python Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Scientist",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Web Developer",
     icon: creator,
   },
 ];
@@ -125,150 +123,105 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "AI Python Developer Intern",
+    companyName: "Dexian",
+    icon: dexian,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building a Python + Flask platform with REST APIs, MySQL data workflows, and secure authentication.",
+      "Developing NLP / Chatbot features for automated assistance and smart user interactions using AI/ML models.",
+      "Supporting testing, debugging, deployment, and Agile-based development with Git.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
+    title: "Volunteer",
+    companyName: "Anbagam Old Age Home",
+    icon: volunteer,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jun 2024 - Jul 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Provided companionship and facilitated group activities for seniors, supporting emotional well-being for 10 residents per session.",
+      "Assisted in daily operations including meal distribution for 40+ residents.",
     ],
   },
-];
-
-const testimonials: TTestimonial[] = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Community Connect - Pivotal Role",
+    companyName: "Community Education and Development",
+    icon: community,
+    iconBg: "#383E56",
+    date: "Jun 2024 - Jul 2025",
+    points: [
+      "Led community education workshops on health awareness, digital literacy, and personal hygiene, reaching 200+ participants.",
+      "Designed outreach programs with local NGOs and schools, increasing literacy engagement by 35%.",
+    ],
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "AI-Generated Image Detection",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a deep learning system using CNN and Vision Transformers to classify and detect synthetic images. Achieved high accuracy in distinguishing AI-generated content from real photographs.",
     tags: [
       {
-        name: "react",
+        name: "tensorflow",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "cnn",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: aidetection,
+    sourceCodeLink: "https://github.com/MuthuxSelvam",
   },
   {
-    name: "Job IT",
+    name: "Oncology Prediction Model",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Leveraged SVM and Reinforcement Learning to predict cancer outcomes. Built a robust model for early detection and diagnosis, contributing to improved patient care and treatment planning.",
     tags: [
       {
-        name: "react",
+        name: "svm",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "ml",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: oncology,
+    sourceCodeLink: "https://github.com/MuthuxSelvam",
   },
   {
-    name: "Trip Guide",
+    name: "Diabetes Prediction System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Deployed a machine learning-driven diagnostic tool using Python (scikit-learn) and patient data. Trained on 1000+ patient records with key indicators like BMI, age, and glucose levels.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "healthcare",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: diabetes,
+    sourceCodeLink: "https://github.com/MuthuxSelvam",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

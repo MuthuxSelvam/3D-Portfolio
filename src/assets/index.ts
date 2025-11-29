@@ -25,10 +25,16 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import volunteer from "./company/volunteer.png";
+import dexian from "./company/dexian.png";
+import community from "./company/community.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import aidetection from "./aidetection.png";
+import oncology from "./oncology.png";
+import diabetes from "./diabetes.png";
 
 export {
   logo,
@@ -56,7 +62,13 @@ export {
   shopify,
   starbucks,
   tesla,
+  volunteer,
+  dexian,
+  community,
   carrent,
   jobit,
   tripguide,
+  aidetection,
+  oncology,
+  diabetes,
 };
